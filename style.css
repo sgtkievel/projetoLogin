@@ -1,0 +1,40 @@
+body {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#lembrarLogin {
+  margin: 10px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: gray;
+}
+
+#login {
+  margin: 10px;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: gray;
+}
+
+input[type='submit'] {
+  background-color: blue;
+  color: white;
+
+  font-size: 1rem;
+  border-radius: 5px;
+  border-style: none;
+}
+
+input[type='submit']:hover {
+  filter: brightness(150%);
+}
+
+input[type='submit']:focus {
+  filter: brightness(80%);
+}
