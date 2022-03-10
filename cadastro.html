@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Novo Mundo</h1>
+    <h1>Cadastro</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome Completo</label><br />
+        <input
+          type="text"
+          name="usuario"
+          value=""
+          required
+          minlength="3"
+          maxlength="50"
+          placeholder="Digite seu nome completo"
+        /><br /><br />
+
+        <label>Data Nascimento</label><br />
+        <input type="date" name="dataNasc" value="" required /><br /><br />
+
+        <label>Sexo</label><br />
+        <input type="radio" name="sexo" name="masculino" value="" /><label
+          class="radio-label"
+          >Masculino</label
+        ><br />
+        <input type="radio" name="sexo" name="feminino" value="" /><label
+          class="radio-label"
+          >Feminino</label
+        ><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>Rua</label><br />
+        <input type="text" name="rua" value="" /><br />
+        <label>Nr</label><br />
+        <input type="number" name="nr" value="" /><br /><br />
+
+        <input type="text" name="end" value="" /><br /><br />
+        <select name="cidade">
+          <option></option>
+          <option>Torres</option>
+          <option>Capão da Canoa</option>
+          <option>Tramandaí</option>
+          <option>Osório</option>
+          <option>Novo Hamburgo</option>
+          <option>Outras</option>
+        </select>
+        <br /><br />
+
+        <label>Complemento</label><br />
+        <input type="text" name="compl" value="" /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato</legend>
+        <label>Celular</label><br />
+        <input
+          type="tel"
+          name="celular"
+          value=""
+          placeholder="(99) 99999-9999"
+        /><br /><br />
+
+        <label>Email</label><br />
+        <input type="email" name="email" value="" /><br /><br />
+      </fieldset>
+
+      <input type="color" name="cor" value="" /><label>
+        Informe sua cor preferida</label
+      ><br /><br /><br /><br />
+
+      <input type="submit" value="Cadastrar" />
+    </form>
+    <hr />
+    <h2>Área de Login</h2>
+    <form action="login.html" method="get">
+      <fieldset>
+        <label>Usuário</label><br />
+        <input type="text" name="usuarioLogin" value="" required /><br /><br />
+
+        <label>Senha</label><br />
+        <input type="password" name="password" value="" required /><br /><br />
+
+        <input type="submit" value="Fazer Login" />
+      </fieldset>
+    </form>
+  </body>
+</html>

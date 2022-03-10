@@ -6,29 +6,102 @@ body {
   flex-direction: column;
 }
 
-#lembrarLogin {
-  margin: 10px;
-  padding: 30px;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: gray;
+h1 {
+  color: #3f5044;
 }
 
+form {
+  display: block;
+  width: 80vw;
+}
+
+fieldset,
+#lembrarLogin,
 #login {
-  margin: 10px;
-  padding: 30px;
-  border: 1px solid;
+  background-color: #eff5f1;
+  border-style: none;
   border-radius: 10px;
-  border-color: gray;
+  display: block;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#lembrarLogin,
+#login {
+  padding: 30px;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 10px 0 0 0;
+}
+
+legend {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  border-style: none;
+  border-radius: 5px;
+
+  margin: 0 10px 10px 0;
+  height: 1.5rem;
+  width: 100%;
+
+  transition: all 0.2s ease;
+}
+
+input[type='date'],
+input[type='tel'],
+input[type='number'],
+select {
+  border-style: none;
+  border-radius: 5px;
+
+  height: 1.5rem;
+
+  transition: all 0.2s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+input[type='tel']:focus,
+input[type='number']:focus {
+  box-shadow: 0 4px 4px 0.4px rgba(112, 110, 110, 30%);
+}
+
+input[type='color'] {
+  border-style: none;
+  border-radius: 10px;
+
+  height: 3rem;
+}
+
+.radio-label {
+  font-size: 1rem;
 }
 
 input[type='submit'] {
-  background-color: blue;
+  background-color: #3f5044;
   color: white;
 
   font-size: 1rem;
   border-radius: 5px;
   border-style: none;
+
+  padding: 8px 30px;
+
+  transition: all 0.3s ease;
 }
 
 input[type='submit']:hover {
@@ -37,4 +110,8 @@ input[type='submit']:hover {
 
 input[type='submit']:focus {
   filter: brightness(80%);
+}
+
+input:focus {
+  outline: 0;
 }
